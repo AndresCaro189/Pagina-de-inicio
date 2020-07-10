@@ -1,0 +1,135 @@
+/*===============================================================================================================================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*===============================================================================================================================================================*/
+body{   
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.fondo {
+    background-image: url("../CSS/Fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 700ms;
+    width: 100%;
+}
+
+/*===============================================================================================================================================================*/
+.header {
+    outline: 1px solid gold;
+    height: 3rem;
+}
+
+.Menu{
+    display: flex;
+}
+
+.Menu-item{
+    list-style: none;
+    flex: 1;
+    outline: 1px solid yellow;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .5s;
+    color: white;
+}
+
+.Menu-item:hover{
+    flex: 8;
+    font-size: 20px;
+}
+
+.black {
+ background-color: black;
+}
+
+.ink{
+    background-color: #062f4f;
+}
+
+.posy{
+    background-color: #813772;
+}
+
+.embers {
+    background-color: #882601;
+}
+
+/*===============================================================================================================================================================*/
+.container {
+    display: flex;
+    height: inherit;
+}
+
+
+.content {
+    outline: 1px solid black;
+    flex: 1;
+}
+
+
+.aside {
+    background-color:  rgba(12, 5, 5, 0.5);
+    outline: 1px solid black;
+    flex: 0 0 25%;
+    text-align: center;
+    color: white;
+}
+
+.aside h1 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.aside p {
+    letter-spacing: 3pt;      /* para separar entgre letras */
+    line-height: 20pt;        /* para la separacion entre lineas */ 
+    text-indent: 30pt;        /* para sangrias */ 
+    font-size: 16px;
+    margin-top: 30px;
+}
+/*===============================================================================================================================================================*/
+
+.footer {
+    background-color: #882601;
+    display: flex;
+    align-items: center;
+    height:100px ;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 300px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
